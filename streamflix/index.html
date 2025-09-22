@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StreamFlix</title>
     <meta name="description" content="StreamFlix - Your Homemade Streaming Platform">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header role="banner">
-        <!-- Clickable StreamFlix logo here -->
+        <div class="logo">
+            STREAMFLIX
+        </div>
          <nav role="navigation" aria-label="Main Navigation">
             <ul>
-                <li><a href ="#" aria-current="page">Accueil</a></li>
+                <li><a href ="#accueil" aria-current="page">Accueil</a></li>
                 <li><a href ="#films">Films</a></li>
                 <li><a href ="#series">Séries</a></li>
                 <li><a href ="#ma-liste">Ma Liste</a></li>
@@ -20,8 +23,7 @@
          <!-- User Zone -->
          <div class="search-zone">
             <form role="search" aria-label="Search a film or a serie">
-                <label for="search-input" class="visually-hidden">Rechercher un film ou une série
-                    </label>
+                <label for="search-input" class="visually-hidden">Rechercher un film ou une série :</label>
                     <input type ="search"
                     id="search-input"
                     name="search"
@@ -37,28 +39,38 @@
             </form>
          </div>
     </header>
-    <main>
+    <main id="main-content" role="main">
         <!-- Hero Section -->
-         <section aria-label="Hero Section">
-            <h1>Bienvenue sur StreamFlix</h1>
-            <p>Votre plateforme de streaming maison</p>
-            <img src="../assets/films/inception.webp" alt="Inception Movie Poster" />
-            <h3>Inception</h3>
-            <ul arial-label="film-details">
-                <li aria-label="released-year">Année : 2010</li>
-                <li aria-label="film-duration">Durée : 2h28</li>
-                <li aria-label="film-rating">4.5/5</li>
-                <li aria-label="film-genres">Sci-Fi, Thriller</li>
-            </ul>
-            <p>Synopsis : <br> Un voleur qui s'infiltre dans les rêves des autres pour voler leurs secrets découvre qu'il doit réaliser l'impossible :
-            planter une idée plutôt que de la voler.</p>
-         </section>
-
+        <section class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <div class="hero-badge">Film STREAMFLIX</div>
+                    <h1 class="hero-title">Inception</h1>
+                    <div class="hero-info">
+                        <span class="year">2010</span>
+                        <span class="duration">2h 28min</span>
+                    </div>
+                    <p class="hero-description">
+                        Un voleur qui s'infiltre dans les rêves des autres pour voler leurs secrets découvre qu'il doit réaliser l'impossible : planter une idée plutôt que de la voler.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="button-play" type="button" aria-controls="video-modal" aria-expanded="false" aria-label="Lire Inception">
+                            <span class="play-icon">⏯️</span>
+                            Lecture
+                        </button>
+                        <button class="button-info" type="button" aria-controls="info-modal" aria-expanded="false" aria-label="Plus d'infos sur Inception">
+                            <span class="info-icon">ℹ️</span>
+                            Plus d'infos
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
          <!-- Films Section Grid -->
           <section aria-label="actual-trending-film">
             <h4>Tendances actuelles</h4>
-            <article aria-label="film-card">
-                <img src="../assets/films/darknight.webp" alt="The Dark Knight Movie Poster" />
+            <article aria-label="film-card" role="card" aria-label="The Dark Knight" tabindex="0">
+                <img src="./assets/films/darknight.webp" alt="The Dark Knight Movie Poster" />
                 <h3>The Dark Knight</h3>
                 <ul arial-label="film-details">
                     <li aria-label="released-year">Année : 2008</li>
@@ -67,8 +79,8 @@
                     <li aria-label="film-genres">Action, Crime, Drama</li>
                 </ul>
             </article>
-            <article aria-label="film-card">
-                <img src="../assets/films/Interstellar_film_poster.jpg" alt="Interstellar Movie Poster" />
+            <article aria-label="film-card" role="card" aria-label="Interstellar" tabindex="-1">
+                <img src="./assets/films/Interstellar_film_poster.jpg" alt="Interstellar Movie Poster" />
                 <h3>Interstellar</h3>
                 <ul arial-label="film-details">
                     <li aria-label="released-year">Année : 2014</li>
@@ -77,8 +89,8 @@
                     <li aria-label="film-genres">Sci-Fi, Drama</li>
                 </ul>
             </article>
-            <article aria-label="film-card">
-                <img src="../assets/films/pulp_fiction.jpg" alt="Pulp Fiction Movie Poster" />
+            <article aria-label="film-card" role="card" aria-label="Pulp Fiction" tabindex="-1">
+                <img src="./assets/films/pulp_fiction.jpg" alt="Pulp Fiction Movie Poster" />
                 <h3>Pulp Fiction</h3>
                 <ul arial-label="film-details">
                     <li aria-label="released-year">Année : 1994</li>
@@ -90,8 +102,8 @@
           </section>
           <section aria-label="recommended-for-you">
             <h4>Recommandé pour vous</h4>
-            <article aria-label="film-card">
-                <img src="../assets/films/inception.webp" alt="Inception Movie Poster">
+            <article aria-label="film-card" role="card" aria-label="Inception" tabindex="-1">
+                <img src="./assets/films/inception.webp" alt="Inception Movie Poster">
                 <h3>Inception</h3>
                 <ul arial-label="film-details">
                     <li aria-label="released-year">Année : 2010</li>
@@ -100,8 +112,8 @@
                     <li aria-label="film-genres">Sci-Fi, Thriller</li>
                 </ul>
             </article>
-            <article aria-label="film-card">
-                <img src="../assets/films/matrix.jpeg" alt="The Matrix Movie Poster" />
+            <article aria-label="film-card" role="card" aria-label="The Matrix" tabindex="-1">
+                <img src="./assets/films/matrix.jpeg" alt="The Matrix Movie Poster" />
                 <h3>The Matrix</h3>
                 <ul arial-label="film-details">
                     <li aria-label="released-year">Année : 1999</li>
@@ -110,8 +122,8 @@
                     <li aria-label="film-genres">Action, Sci-Fi</li>
                 </ul>
             </article>
-            <article aria-label="film-card">
-                <img src="../assets/films/forrest_gump.jpg" alt="Forrest Gump Movie Poster" />
+            <article aria-label="film-card" role="card" aria-label="Forrest Gump" tabindex="-1">
+                <img src="./assets/films/forrest_gump.jpg" alt="Forrest Gump Movie Poster" />
                 <h3>Forrest Gump</h3>
                 <ul arial-label="film-details">
                     <li aria-label="released-year">Année : 1994</li>
@@ -123,8 +135,8 @@
           </section>
           <section aria-label="new-releases">
             <h4>Nouveautés</h4>
-            <article aria-label="film-card">
-                <img src="../assets/films/Interstellar_film_poster.jpg" alt="Interstellar Movie Poster" />
+            <article aria-label="film-card" role="card" aria-label="Interstellar" tabindex="-1">
+                <img src="./assets/films/Interstellar_film_poster.jpg" alt="Interstellar Movie Poster" />
                 <h3>Interstellar</h3>
                 <ul arial-label="film-details">
                     <li aria-label="released-year">Année : 2014</li>
@@ -133,8 +145,8 @@
                     <li aria-label="film-genres">Sci-Fi, Drama</li>
                 </ul>
             </article>
-            <article aria-label="film-card">
-                <img src="../assets/films/darknight.webp" alt="The Dark Knight Movie Poster" />
+            <article aria-label="film-card" role="card" aria-label="The Dark Knight" tabindex="-1">
+                <img src="./assets/films/darknight.webp" alt="The Dark Knight Movie Poster" />
                 <h3>The Dark Knight</h3>
                 <ul arial-label="film-details">
                     <li aria-label="released-year">Année : 2008</li>
@@ -143,8 +155,8 @@
                     <li aria-label="film-genres">Action, Crime, Drama</li>
                 </ul>
             </article>
-            <article aria-label="film-card">
-                <img src="../assets/films/inception.webp" alt="Inception Movie Poster" />
+            <article aria-label="film-card" role="card" aria-label="Inception" tabindex="-1">
+                <img src="./assets/films/inception.webp" alt="Inception Movie Poster" />
                 <h3>Inception</h3>
                 <ul arial-label="film-details">
                     <li aria-label="released-year">Année : 2010</li>
@@ -156,7 +168,7 @@
           </section>
     </main>
     <footer role="contentinfo">
-        <div>
+        <div class="footer-content">
             <section aria-label="footer-navigation">
                 <h4>Liens utiles</h4>
                 <ul>
