@@ -1,193 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StreamFlix</title>
-    <meta name="description" content="StreamFlix - Your Homemade Streaming Platform">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <meta
+      name="description"
+      content="StreamFlix - Your Homemade Streaming Platform"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header role="banner">
-        <div class="logo">
-            STREAMFLIX
-        </div>
-         <nav role="navigation" aria-label="Main Navigation">
-            <ul>
-                <li><a href ="#accueil" aria-current="page">Accueil</a></li>
-                <li><a href ="#films">Films</a></li>
-                <li><a href ="#series">Séries</a></li>
-                <li><a href ="#ma-liste">Ma Liste</a></li>
-            </ul>
-         </nav>
-         <!-- User Zone -->
-         <div class="search-zone">
-            <form role="search" aria-label="Search a film or a serie">
-                <label for="search-input" class="visually-hidden">Rechercher un film ou une série :</label>
-                    <input type ="search"
-                    id="search-input"
-                    name="search"
-                    placeholder="Rechercher un film ou une série"
-                    aria-describedby="search-help">
-                    <div id="search-help" class="visually-hidden">
-                        Tapez le nom du film recherché puis appuyez sur Entrée.
-                    </div>
-                    <button
-                    type="submit" aria-label="Lancer la recherche">
-                <span aria-hidden="true">🔍</span>
-            </button>
-            </form>
-         </div>
+      <div class="logo">STREAMFLIX</div>
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#accueil" aria-current="page">Accueil</a></li>
+          <li><a href="#films">Films</a></li>
+          <li><a href="#series">Séries</a></li>
+          <li><a href="#ma-liste">Ma Liste</a></li>
+        </ul>
+      </nav>
+      <!-- User Zone -->
+      <div class="search-zone">
+        <form role="search" aria-label="Search a film or a serie">
+          <label for="search-input" class="visually-hidden"
+            >Rechercher un film ou une série :</label
+          >
+          <input
+            type="search"
+            id="search-input"
+            name="search"
+            placeholder="Rechercher un film ou une série"
+            aria-describedby="search-help"
+          />
+          <div id="search-help" class="visually-hidden">
+            Tapez le nom du film recherché puis appuyez sur Entrée.
+          </div>
+          <button type="submit" aria-label="Lancer la recherche">
+            <span aria-hidden="true">🔍</span>
+          </button>
+        </form>
+      </div>
     </header>
     <main id="main-content" role="main">
-        <!-- Hero Section -->
-        <section class="hero-section" aria-labelledby="hero-title">
-            <div class="hero-overlay">
-                <div class="hero-content">
-                    <div class="hero-badge">Film STREAMFLIX</div>
-                    <h1 class="hero-title">Inception</h1>
-                    <div class="hero-info">
-                        <span class="year">2010</span>
-                        <span class="duration">2h 28min</span>
-                    </div>
-                    <p class="hero-description">
-                        Un voleur qui s'infiltre dans les rêves des autres pour voler leurs secrets découvre qu'il doit réaliser l'impossible : planter une idée plutôt que de la voler.
-                    </p>
-                    <div class="hero-actions">
-                        <button class="button-play" type="button" aria-controls="video-modal" aria-expanded="false" aria-label="Lire Inception">
-                            <span class="play-icon">⏯️</span>
-                            Lecture
-                        </button>
-                        <button class="button-info" type="button" aria-controls="info-modal" aria-expanded="false" aria-label="Plus d'infos sur Inception">
-                            <span class="info-icon">ℹ️</span>
-                            Plus d'infos
-                        </button>
-                    </div>
-                </div>
+      <!-- Hero Section -->
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <div class="hero-badge">Film STREAMFLIX</div>
+            <h1 class="hero-title">Inception</h1>
+            <div class="hero-info">
+              <span class="year">2010</span>
+              <span class="duration">2h 28min</span>
             </div>
-        </section>
-         <!-- Films Section Grid -->
-          <section aria-label="actual-trending-film">
-            <h4>Tendances actuelles</h4>
-            <article aria-label="film-card" role="card" aria-label="The Dark Knight" tabindex="0">
-                <img src="./assets/films/darknight.webp" alt="The Dark Knight Movie Poster" />
-                <h3>The Dark Knight</h3>
-                <ul arial-label="film-details">
-                    <li aria-label="released-year">Année : 2008</li>
-                    <li aria-label="film-duration">Durée : 2h32</li>
-                    <li aria-label="film-rating">4.8/5</li>
-                    <li aria-label="film-genres">Action, Crime, Drama</li>
-                </ul>
-            </article>
-            <article aria-label="film-card" role="card" aria-label="Interstellar" tabindex="-1">
-                <img src="./assets/films/Interstellar_film_poster.jpg" alt="Interstellar Movie Poster" />
-                <h3>Interstellar</h3>
-                <ul arial-label="film-details">
-                    <li aria-label="released-year">Année : 2014</li>
-                    <li aria-label="film-duration">Durée : 2h49</li>
-                    <li aria-label="film-rating">4.7/5</li>
-                    <li aria-label="film-genres">Sci-Fi, Drama</li>
-                </ul>
-            </article>
-            <article aria-label="film-card" role="card" aria-label="Pulp Fiction" tabindex="-1">
-                <img src="./assets/films/pulp_fiction.jpg" alt="Pulp Fiction Movie Poster" />
-                <h3>Pulp Fiction</h3>
-                <ul arial-label="film-details">
-                    <li aria-label="released-year">Année : 1994</li>
-                    <li aria-label="film-duration">Durée : 2h34</li>
-                    <li aria-label="film-rating">4.6/5</li>
-                    <li aria-label="film-genres">Action, Crime, Drama</li>
-                </ul>
-            </article>
-          </section>
-          <section aria-label="recommended-for-you">
-            <h4>Recommandé pour vous</h4>
-            <article aria-label="film-card" role="card" aria-label="Inception" tabindex="-1">
-                <img src="./assets/films/inception.webp" alt="Inception Movie Poster">
-                <h3>Inception</h3>
-                <ul arial-label="film-details">
-                    <li aria-label="released-year">Année : 2010</li>
-                    <li aria-label="film-duration">Durée : 2h28</li>
-                    <li aria-label="film-rating">4.5/5</li>
-                    <li aria-label="film-genres">Sci-Fi, Thriller</li>
-                </ul>
-            </article>
-            <article aria-label="film-card" role="card" aria-label="The Matrix" tabindex="-1">
-                <img src="./assets/films/matrix.jpeg" alt="The Matrix Movie Poster" />
-                <h3>The Matrix</h3>
-                <ul arial-label="film-details">
-                    <li aria-label="released-year">Année : 1999</li>
-                    <li aria-label="film-duration">Durée : 2h16</li>
-                    <li aria-label="film-rating">4.5/5</li>
-                    <li aria-label="film-genres">Action, Sci-Fi</li>
-                </ul>
-            </article>
-            <article aria-label="film-card" role="card" aria-label="Forrest Gump" tabindex="-1">
-                <img src="./assets/films/forrest_gump.jpg" alt="Forrest Gump Movie Poster" />
-                <h3>Forrest Gump</h3>
-                <ul arial-label="film-details">
-                    <li aria-label="released-year">Année : 1994</li>
-                    <li aria-label="film-duration">Durée : 2h22</li>
-                    <li aria-label="film-rating">4.4/5</li>
-                    <li aria-label="film-genres">Drama, Romance</li>
-                </ul>
-            </article>
-          </section>
-          <section aria-label="new-releases">
-            <h4>Nouveautés</h4>
-            <article aria-label="film-card" role="card" aria-label="Interstellar" tabindex="-1">
-                <img src="./assets/films/Interstellar_film_poster.jpg" alt="Interstellar Movie Poster" />
-                <h3>Interstellar</h3>
-                <ul arial-label="film-details">
-                    <li aria-label="released-year">Année : 2014</li>
-                    <li aria-label="film-duration">Durée : 2h49</li>
-                    <li aria-label="film-rating">4.7/5</li>
-                    <li aria-label="film-genres">Sci-Fi, Drama</li>
-                </ul>
-            </article>
-            <article aria-label="film-card" role="card" aria-label="The Dark Knight" tabindex="-1">
-                <img src="./assets/films/darknight.webp" alt="The Dark Knight Movie Poster" />
-                <h3>The Dark Knight</h3>
-                <ul arial-label="film-details">
-                    <li aria-label="released-year">Année : 2008</li>
-                    <li aria-label="film-duration">Durée : 2h32</li>
-                    <li aria-label="film-rating">4.8/5</li>
-                    <li aria-label="film-genres">Action, Crime, Drama</li>
-                </ul>
-            </article>
-            <article aria-label="film-card" role="card" aria-label="Inception" tabindex="-1">
-                <img src="./assets/films/inception.webp" alt="Inception Movie Poster" />
-                <h3>Inception</h3>
-                <ul arial-label="film-details">
-                    <li aria-label="released-year">Année : 2010</li>
-                    <li aria-label="film-duration">Durée : 2h28</li>
-                    <li aria-label="film-rating">4.5/5</li>
-                    <li aria-label="film-genres">Sci-Fi, Thriller</li>
-                </ul>
-            </article>
-          </section>
+            <p class="hero-description">
+              Un voleur qui s'infiltre dans les rêves des autres pour voler
+              leurs secrets découvre qu'il doit réaliser l'impossible : planter
+              une idée plutôt que de la voler.
+            </p>
+            <div class="hero-actions">
+              <button
+                class="button-play"
+                type="button"
+                aria-controls="video-modal"
+                aria-expanded="false"
+                aria-label="Lire Inception"
+              >
+                <span class="play-icon">⏯️</span>
+                Lecture
+              </button>
+              <button
+                class="button-info"
+                type="button"
+                aria-controls="info-modal"
+                aria-expanded="false"
+                aria-label="Plus d'infos sur Inception"
+              >
+                <span class="info-icon">ℹ️</span>
+                Plus d'infos
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Films Section Grid -->
+      <section class="trending-films" aria-label="actual-trending-film">
+        <h4>Tendances actuelles</h4>
+        <div class="films-wrapper">
+          <article
+            class="trending-film-card"
+            aria-label="film-card"
+            role="card"
+            aria-label="The Dark Knight"
+            tabindex="0"
+          >
+            <img
+              src="./assets/films/darknight.webp"
+              alt="The Dark Knight Movie Poster"
+            />
+            <h3>The Dark Knight</h3>
+            <ul arial-label="film-details">
+              <li aria-label="released-year">Année : 2008</li>
+              <li aria-label="film-duration">Durée : 2h32</li>
+              <li aria-label="film-rating">4.8/5</li>
+              <li aria-label="film-genres">Action, Crime, Drama</li>
+            </ul>
+          </article>
+          <article
+            class="trending-film-card"
+            aria-label="film-card"
+            role="card"
+            aria-label="Interstellar"
+            tabindex="-1"
+          >
+            <img
+              src="./assets/films/Interstellar_film_poster.jpg"
+              alt="Interstellar Movie Poster"
+            />
+            <h3>Interstellar</h3>
+            <ul arial-label="film-details">
+              <li aria-label="released-year">Année : 2014</li>
+              <li aria-label="film-duration">Durée : 2h49</li>
+              <li aria-label="film-rating">4.7/5</li>
+              <li aria-label="film-genres">Sci-Fi, Drama</li>
+            </ul>
+          </article>
+          <article
+            class="trending-film-card"
+            role="card"
+            aria-label="Pulp Fiction"
+            tabindex="-1"
+          >
+            <img
+              src="./assets/films/pulp_fiction.jpg"
+              alt="Pulp Fiction Movie Poster"
+            />
+            <h3>Pulp Fiction</h3>
+            <ul arial-label="film-details">
+              <li aria-label="released-year">Année : 1994</li>
+              <li aria-label="film-duration">Durée : 2h34</li>
+              <li aria-label="film-rating">4.6/5</li>
+              <li aria-label="film-genres">Action, Crime, Drama</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="recommended-films" aria-label="recommended-for-you">
+        <h4>Recommandé pour vous</h4>
+        <div class="films-wrapper">
+          <article
+            aria-label="film-card"
+            role="card"
+            aria-label="Inception"
+            tabindex="-1"
+          >
+            <img
+              src="./assets/films/inception.webp"
+              alt="Inception Movie Poster"
+            />
+            <h3>Inception</h3>
+            <ul arial-label="film-details">
+              <li aria-label="released-year">Année : 2010</li>
+              <li aria-label="film-duration">Durée : 2h28</li>
+              <li aria-label="film-rating">4.5/5</li>
+              <li aria-label="film-genres">Sci-Fi, Thriller</li>
+            </ul>
+          </article>
+          <article
+            aria-label="film-card"
+            role="card"
+            aria-label="The Matrix"
+            tabindex="-1"
+          >
+            <img
+              src="./assets/films/matrix.jpeg"
+              alt="The Matrix Movie Poster"
+            />
+            <h3>The Matrix</h3>
+            <ul arial-label="film-details">
+              <li aria-label="released-year">Année : 1999</li>
+              <li aria-label="film-duration">Durée : 2h16</li>
+              <li aria-label="film-rating">4.5/5</li>
+              <li aria-label="film-genres">Action, Sci-Fi</li>
+            </ul>
+          </article>
+          <article
+            aria-label="film-card"
+            role="card"
+            aria-label="Forrest Gump"
+            tabindex="-1"
+          >
+            <img
+              src="./assets/films/forrest_gump.jpg"
+              alt="Forrest Gump Movie Poster"
+            />
+            <h3>Forrest Gump</h3>
+            <ul arial-label="film-details">
+              <li aria-label="released-year">Année : 1994</li>
+              <li aria-label="film-duration">Durée : 2h22</li>
+              <li aria-label="film-rating">4.4/5</li>
+              <li aria-label="film-genres">Drama, Romance</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="new-releases" aria-label="new-releases">
+        <h4>Nouveautés</h4>
+        <div class="films-wrapper">
+          <article
+            aria-label="film-card"
+            role="card"
+            aria-label="Interstellar"
+            tabindex="-1"
+          >
+            <img
+              src="./assets/films/Interstellar_film_poster.jpg"
+              alt="Interstellar Movie Poster"
+            />
+            <h3>Interstellar</h3>
+            <ul arial-label="film-details">
+              <li aria-label="released-year">Année : 2014</li>
+              <li aria-label="film-duration">Durée : 2h49</li>
+              <li aria-label="film-rating">4.7/5</li>
+              <li aria-label="film-genres">Sci-Fi, Drama</li>
+            </ul>
+          </article>
+          <article
+            aria-label="film-card"
+            role="card"
+            aria-label="The Dark Knight"
+            tabindex="-1"
+          >
+            <img
+              src="./assets/films/darknight.webp"
+              alt="The Dark Knight Movie Poster"
+            />
+            <h3>The Dark Knight</h3>
+            <ul arial-label="film-details">
+              <li aria-label="released-year">Année : 2008</li>
+              <li aria-label="film-duration">Durée : 2h32</li>
+              <li aria-label="film-rating">4.8/5</li>
+              <li aria-label="film-genres">Action, Crime, Drama</li>
+            </ul>
+          </article>
+          <article
+            aria-label="film-card"
+            role="card"
+            aria-label="Inception"
+            tabindex="-1"
+          >
+            <img
+              src="./assets/films/inception.webp"
+              alt="Inception Movie Poster"
+            />
+            <h3>Inception</h3>
+            <ul arial-label="film-details">
+              <li aria-label="released-year">Année : 2010</li>
+              <li aria-label="film-duration">Durée : 2h28</li>
+              <li aria-label="film-rating">4.5/5</li>
+              <li aria-label="film-genres">Sci-Fi, Thriller</li>
+            </ul>
+          </article>
+        </div>
+      </section>
     </main>
     <footer role="contentinfo">
-        <div class="footer-content">
-            <section aria-label="footer-navigation">
-                <h4>Liens utiles</h4>
-                <ul>
-                    <li><a href ="#help" aria-label="Aide">Aide</a></li>
-                    <li><a href ="#contact" aria-label="Contact">Contact</a></li>
-                    <li><a href ="#mentions-legales" aria-label="Mentions légales">Mentions légales</a></li>
-                    <li><a href ="#cgu" aria-label="Conditions d'utilisation">Conditions d'utilisation</a></li>
-                </ul>
-        </div>
+      <div class="footer-content">
+        <section aria-label="footer-navigation">
+          <h4>Liens utiles</h4>
+          <ul>
+            <li><a href="#help" aria-label="Aide">Aide</a></li>
+            <li><a href="#contact" aria-label="Contact">Contact</a></li>
+            <li>
+              <a href="#mentions-legales" aria-label="Mentions légales"
+                >Mentions légales</a
+              >
+            </li>
+            <li>
+              <a href="#cgu" aria-label="Conditions d'utilisation"
+                >Conditions d'utilisation</a
+              >
+            </li>
+          </ul>
         </section>
         <section aria-label="social-media">
-            <h4>Suivez-nous sur les réseaux sociaux</h4>
-            <ul>
-                <li><a href ="#facebook" aria-label="Facebook">Facebook</a></li>
-                <li><a href ="#twitter" aria-label="Twitter">Twitter</a></li>
-                <li><a href ="#instagram" aria-label="Instagram">Instagram</a></li>
-            </ul>
+          <h4>Suivez-nous sur les réseaux sociaux</h4>
+          <ul>
+            <li><a href="#facebook" aria-label="Facebook">Facebook</a></li>
+            <li><a href="#twitter" aria-label="Twitter">Twitter</a></li>
+            <li><a href="#instagram" aria-label="Instagram">Instagram</a></li>
+          </ul>
         </section>
+      </div>
+      <div class="copyrights">
         <p>&copy; 2024 StreamFlix. Tous droits réservés.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
