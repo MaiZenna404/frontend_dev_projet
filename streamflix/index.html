@@ -10,10 +10,11 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
     <header role="banner">
       <div class="logo">STREAMFLIX</div>
-      <nav role="navigation" aria-label="Main Navigation">
+      <nav class="navbar"role="navigation" aria-label="Main Navigation">
         <ul>
           <li><a href="#accueil" aria-current="page">Accueil</a></li>
           <li><a href="#films">Films</a></li>
@@ -38,7 +39,9 @@
             Tapez le nom du film recherché puis appuyez sur Entrée.
           </div>
           <button type="submit" aria-label="Lancer la recherche">
-            <span aria-hidden="true">🔍</span>
+            <span aria-hidden="true"
+              ><img src="./assets/icons/Frame 79.svg" alt="Search Icon"
+            /></span>
           </button>
         </form>
       </div>
@@ -48,7 +51,7 @@
       <section class="hero-section" aria-labelledby="hero-title">
         <div class="hero-overlay">
           <div class="hero-content">
-            <div class="hero-badge">Film STREAMFLIX</div>
+            <div class="hero-badge">StreamFlix Film</div>
             <h1 class="hero-title">Inception</h1>
             <div class="hero-info">
               <span class="year">2010</span>
@@ -68,7 +71,10 @@
                 aria-label="Lire Inception"
               >
                 <span class="play-icon">
-                  <img src="./assets/icons/play-button-svgrepo-com.svg" alt="Play Icon" />
+                  <img
+                    src="./assets/icons/play-button-svgrepo-com.svg"
+                    alt="Play Icon"
+                  />
                 </span>
                 Lecture
               </button>
@@ -109,8 +115,12 @@
                 <ul arial-label="film-details">
                   <li aria-label="released-year">Année : 2008</li>
                   <li aria-label="film-duration">Durée : 2h32</li>
-                  <li aria-label="film-rating">4.8/5</li>
-                  <li aria-label="film-genres">Action, Crime, Drama</li>
+                  <li aria-label="film-rating">⭐ 4.8/5</li>
+                  <li aria-label="film-genres">
+                    <span class="genre-badge">Action</span>
+                    <span class="genre-badge">Crime</span>
+                    <span class="genre-badge">Drama</span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -132,8 +142,11 @@
                 <ul arial-label="film-details">
                   <li aria-label="released-year">Année : 2014</li>
                   <li aria-label="film-duration">Durée : 2h49</li>
-                  <li aria-label="film-rating">4.7/5</li>
-                  <li aria-label="film-genres">Sci-Fi, Drama</li>
+                  <li aria-label="film-rating">⭐ 4.7/5</li>
+                  <li aria-label="film-genres">
+                    <span class="genre-badge">Sci-Fi</span>
+                    <span class="genre-badge">Drama</span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -154,8 +167,12 @@
                 <ul arial-label="film-details">
                   <li aria-label="released-year">Année : 1994</li>
                   <li aria-label="film-duration">Durée : 2h34</li>
-                  <li aria-label="film-rating">4.6/5</li>
-                  <li aria-label="film-genres">Action, Crime, Drama</li>
+                  <li aria-label="film-rating">⭐ 4.6/5</li>
+                  <li aria-label="film-genres">
+                    <span class="genre-badge">Action</span>
+                    <span class="genre-badge">Crime</span>
+                    <span class="genre-badge">Drama</span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -182,8 +199,11 @@
                 <ul arial-label="film-details">
                   <li aria-label="released-year">Année : 2010</li>
                   <li aria-label="film-duration">Durée : 2h28</li>
-                  <li aria-label="film-rating">4.5/5</li>
-                  <li aria-label="film-genres">Sci-Fi, Thriller</li>
+                  <li aria-label="film-rating">⭐ 4.5/5</li>
+                  <li aria-label="film-genres">
+                    <span class="genre-badge">Sci-Fi</span>
+                    <span class="genre-badge">Thriller</span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -205,14 +225,17 @@
                 <ul arial-label="film-details">
                   <li aria-label="released-year">Année : 1999</li>
                   <li aria-label="film-duration">Durée : 2h16</li>
-                  <li aria-label="film-rating">4.5/5</li>
-                  <li aria-label="film-genres">Action, Sci-Fi</li>
+                  <li aria-label="film-rating">⭐ 4.5/5</li>
+                  <li aria-label="film-genres">
+                    <span class="genre-badge">Sci-Fi</span>
+                    <span class="genre-badge">Action</span>
+                  </li>
                 </ul>
               </div>
             </div>
           </article>
           <article
-          class="recommended-film-card"
+            class="recommended-film-card"
             aria-label="film-card"
             role="card"
             aria-label="Forrest Gump"
@@ -224,14 +247,17 @@
             />
             <div class="show-on-hover">
               <div class="hover-text">
-            <h3>Forrest Gump</h3>
-            <ul arial-label="film-details">
-              <li aria-label="released-year">Année : 1994</li>
-              <li aria-label="film-duration">Durée : 2h22</li>
-              <li aria-label="film-rating">4.4/5</li>
-              <li aria-label="film-genres">Drama, Romance</li>
-            </ul>
-            </div>
+                <h3>Forrest Gump</h3>
+                <ul arial-label="film-details">
+                  <li aria-label="released-year">Année : 1994</li>
+                  <li aria-label="film-duration">Durée : 2h22</li>
+                  <li aria-label="film-rating">⭐ 4.4/5</li>
+                  <li aria-label="film-genres">
+                    <span class="genre-badge">Drama</span>
+                    <span class="genre-badge">Romance</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </article>
         </div>
@@ -240,6 +266,7 @@
         <h4>Nouveautés</h4>
         <div class="films-wrapper">
           <article
+            class="new-releases-card"
             aria-label="film-card"
             role="card"
             aria-label="Interstellar"
@@ -249,15 +276,23 @@
               src="./assets/films/Interstellar_film_poster.jpg"
               alt="Interstellar Movie Poster"
             />
-            <h3>Interstellar</h3>
-            <ul arial-label="film-details">
-              <li aria-label="released-year">Année : 2014</li>
-              <li aria-label="film-duration">Durée : 2h49</li>
-              <li aria-label="film-rating">4.7/5</li>
-              <li aria-label="film-genres">Sci-Fi, Drama</li>
-            </ul>
+            <div class="show-on-hover">
+              <div class="hover-text">
+                <h3>Interstellar</h3>
+                <ul arial-label="film-details">
+                  <li aria-label="released-year">Année : 2014</li>
+                  <li aria-label="film-duration">Durée : 2h49</li>
+                  <li aria-label="film-rating">⭐ 4.7/5</li>
+                  <li aria-label="film-genres">
+                    <span class="genre-badge">Drama</span>
+                    <span class="genre-badge">Sci-Fi</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </article>
           <article
+            class="new-releases-card"
             aria-label="film-card"
             role="card"
             aria-label="The Dark Knight"
@@ -267,15 +302,24 @@
               src="./assets/films/darknight.webp"
               alt="The Dark Knight Movie Poster"
             />
-            <h3>The Dark Knight</h3>
-            <ul arial-label="film-details">
-              <li aria-label="released-year">Année : 2008</li>
-              <li aria-label="film-duration">Durée : 2h32</li>
-              <li aria-label="film-rating">4.8/5</li>
-              <li aria-label="film-genres">Action, Crime, Drama</li>
-            </ul>
+            <div class="show-on-hover">
+              <div class="hover-text">
+                <h3>The Dark Knight</h3>
+                <ul arial-label="film-details">
+                  <li aria-label="released-year">Année : 2008</li>
+                  <li aria-label="film-duration">Durée : 2h32</li>
+                  <li aria-label="film-rating">⭐ 4.8/5</li>
+                  <li aria-label="film-genres">
+                    <span class="genre-badge">Action</span>
+                    <span class="genre-badge">Crime</span>
+                    <span class="genre-badge">Drama</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </article>
           <article
+            class="new-releases-card"
             aria-label="film-card"
             role="card"
             aria-label="Inception"
@@ -285,43 +329,69 @@
               src="./assets/films/inception.webp"
               alt="Inception Movie Poster"
             />
-            <h3>Inception</h3>
-            <ul arial-label="film-details">
-              <li aria-label="released-year">Année : 2010</li>
-              <li aria-label="film-duration">Durée : 2h28</li>
-              <li aria-label="film-rating">4.5/5</li>
-              <li aria-label="film-genres">Sci-Fi, Thriller</li>
-            </ul>
+            <div class="show-on-hover">
+              <div class="hover-text">
+                <h3>Inception</h3>
+                <ul arial-label="film-details">
+                  <li aria-label="released-year">Année : 2010</li>
+                  <li aria-label="film-duration">Durée : 2h28</li>
+                  <li aria-label="film-rating">⭐ 4.5/5</li>
+                  <li aria-label="film-genres">
+                    <span class="genre-badge">Sci-Fi</span>
+                    <span class="genre-badge">Thriller</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </article>
         </div>
       </section>
     </main>
     <footer role="contentinfo">
       <div class="footer-content">
-        <section aria-label="footer-navigation">
-          <h4>Liens utiles</h4>
-          <ul>
-            <li><a href="#help" aria-label="Aide">Aide</a></li>
-            <li><a href="#contact" aria-label="Contact">Contact</a></li>
-            <li>
-              <a href="#mentions-legales" aria-label="Mentions légales"
+        <section aria-label="social-media">
+            <div class="social-media-wrapper">
+                <img src="./assets/sns/Facebook.svg" alt="Facebook Icon" />
+                <img src="./assets/sns/Twitter.svg" alt="Twitter Icon" />
+                <img src="./assets/sns/Instagram.svg" alt="Instagram Icon" />
+                <img src="./assets/sns/YouTube.svg" alt="YouTube Icon" />
+            </div>
+        </section>
+        <section aria-label="footer-navigation" class="footer-links">
+          <div class="footer-links-wrapper">
+            <div class="column1">
+                <a href="#help" aria-label="aide">Aide</a>
+                <a href="#privacy" aria-label="privacy">Confidentialité</a>
+                <a href="#terms" aria-label="terms">Conditions d'utilisation</a>
+            </div>
+            <div class="column2">
+                <a href="#contact" aria-label="contact">Contact</a>
+                <a href="#jobs" aria-label="jobs">Jobs</a>
+                <a href="#support" aria-label="support">Support</a>
+            </div>
+            <div class="column3">
+              <a href="#mentions-legales" aria-label="mentions légales"
                 >Mentions légales</a
               >
-            </li>
-            <li>
-              <a href="#cgu" aria-label="Conditions d'utilisation"
+              <a href="#streamflix-shop" aria-label="streamflix-shop"
+                >Streamflix Shop</a
+              >
+              <a href="#cookies-preferences" aria-label="cookies-preferences"
+                >Préférences des cookies</a
+              >
+            </div>
+            <div class="column4">
+              <a href="#cgu" aria-label="conditions d'utilisation"
                 >Conditions d'utilisation</a
               >
-            </li>
-          </ul>
-        </section>
-        <section aria-label="social-media">
-          <h4>Suivez-nous sur les réseaux sociaux</h4>
-          <ul>
-            <li><a href="#facebook" aria-label="Facebook">Facebook</a></li>
-            <li><a href="#twitter" aria-label="Twitter">Twitter</a></li>
-            <li><a href="#instagram" aria-label="Instagram">Instagram</a></li>
-          </ul>
+              <a href="#media-center" aria-label="media-center"
+                >Media Center</a
+              >
+              <a href="#company-info" aria-label="company-info"
+                >Informations sur l'entreprise</a
+              >
+            </div>
+          </div>
         </section>
       </div>
       <div class="copyrights">
