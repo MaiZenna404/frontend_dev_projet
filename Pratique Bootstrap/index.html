@@ -43,7 +43,6 @@
             </nav>
         </div>
     </header>
-
     <section class="hero">
         <div class="container">
             <div class="hero-content">
@@ -53,7 +52,7 @@
             </div>
         </div>
     </section>
-
+       <div id="liveAlertPlaceholder"></div>
     <section class="featured-books">
         <div class="container">
             <h2 class="section-title">Livres populaires</h2>
@@ -64,7 +63,7 @@
                         <h5 class="card-title">Le Petit Prince</h5>
                         <p class="book-author">Antoine de Saint-Exupéry</p> 
                         <p class="book-price">12,99 €</p>
-                        <a href="#" type="button" class="btn btn-success">Ajouter au panier</a>
+                        <a href="#" type="button" class="btn btn-success" id="liveAlertBtn">Ajouter au panier</a>
                     </div>
                 </div>
                 <div class="card">
@@ -73,7 +72,7 @@
                         <h5 class="card-title">1984</h5>
                         <p class="book-author">George Orwell</p>
                         <p class="book-price">15,50 €</p>
-                        <button type="button" class="btn btn-success">Ajouter au panier</button>
+                        <button type="button" class="btn btn-success" id="liveAlertBtn1">Ajouter au panier</button>
                     </div>
                 </div>
                 <div class="card">
@@ -82,7 +81,7 @@
                         <h5 class="card-title">L'Étranger</h5>
                         <p class="book-author">Albert Camus</p>
                         <p class="book-price">13,75 €</p>
-                        <button type="button" class="btn btn-success">Ajouter au panier</button>
+                        <button type="button" class="btn btn-success" id="liveAlertBtn2">Ajouter au panier</button>
                     </div>
                 </div>
             </div>
@@ -129,5 +128,41 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
+    <script>
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+            const alert = (message, type) => {
+                const wrapper = document.createElement('div')
+                wrapper.innerHTML = [
+                    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                    `   <div>${message}</div>`,
+                    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                    '</div>'
+                ].join('')
+
+                alertPlaceholder.append(wrapper)
+            }
+            
+             const alertTrigger0 = document.getElementById('liveAlertBtn')
+                if (alertTrigger0) {
+                    alertTrigger0.addEventListener('click', () => {
+                        alert('Article ajouté au panier !', 'success')
+                    })
+                }
+
+            const alertTrigger1 = document.getElementById('liveAlertBtn1')
+            if (alertTrigger1) {
+                alertTrigger1.addEventListener('click', () => {
+                    alert('Article ajouté au panier !', 'success')
+                })
+            }
+
+            const alertTrigger2 = document.getElementById('liveAlertBtn2')
+            if (alertTrigger2) {
+                alertTrigger2.addEventListener('click', () => {
+                    alert('Article ajouté au panier !', 'success')
+                })
+            }
+    </script>
 
 </html>
