@@ -1,0 +1,28 @@
+// Import variables
+@import 'variables';
+
+// Main styles
+body {
+  font-family: $font-family;
+  color: $black;
+  background-color: $white;
+}
+
+h1 {
+  color: $black;
+  font-size: 2em;
+}
+
+.button {
+  background-color: $btn-color;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: $btn-hover-color;
+}

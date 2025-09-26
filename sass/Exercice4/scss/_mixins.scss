@@ -1,0 +1,10 @@
+// _mixins.scss
+
+@import 'variables'; // Importation des variables
+
+@mixin box-style($radius, $shadow-color) {
+    border-radius: $radius; // Applique un rayon aux coins
+    box-shadow: 0 2px 5px $shadow-color; // Applique une ombre portée
+    padding: 1rem; // Ajoute un espacement interne
+    background-color: $white; // Couleur de fond blanche
+}

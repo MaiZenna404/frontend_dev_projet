@@ -1,0 +1,12 @@
+{
+  "name": "sass-exercise2",
+  "version": "1.0.0",
+  "description": "SASS Exercise 2",
+  "scripts": {
+    "sass": "sass scss/navigation.scss css/styles.css",
+    "sass:watch": "sass --watch scss/navigation.scss css/styles.css"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}

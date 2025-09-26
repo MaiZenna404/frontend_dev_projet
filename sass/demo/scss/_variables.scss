@@ -1,0 +1,36 @@
+// _variables.scss
+
+// Couleurs
+$color-primary: #3498db; // Couleur principale
+$color-secondary: #2ecc71; // Couleur secondaire
+$color-accent: #e74c3c; // Couleur d'accentuation
+$color-background: #ecf0f1; // Couleur de fond
+$color-text: #2c3e50; // Couleur du texte
+
+// Tailles de police
+$font-size-base: 16px; // Taille de base
+$font-size-small: 14px; // Taille petite
+$font-size-large: 20px; // Taille grande
+
+// Espacements
+$spacing-base: 16px; // Espacement de base
+$spacing-small: 8px; // Petit espacement
+$spacing-large: 32px; // Grand espacement
+
+// Famille de polices
+$font-family: 'Roboto', 'Arial', sans-serif; // Famille de polices
+
+// Dans _variables.scss
+
+// Map des couleurs du thème
+$theme-colors: (
+    'primary': $color-primary,
+    'secondary': $color-secondary,
+    'accent': $color-accent,
+    'success': #28a745,
+    'danger': #e74c3c,
+    'warning': #f1c40f,
+    'info': #3498db,
+    'light': #ecf0f1,
+    'dark': #2c3e50
+);

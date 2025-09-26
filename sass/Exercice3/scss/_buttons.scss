@@ -1,0 +1,15 @@
+@import 'variables';
+
+.button {
+    background-color: $btn-color;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: $btn-hover-color;
+}

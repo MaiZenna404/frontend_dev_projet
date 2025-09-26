@@ -1,0 +1,22 @@
+.navbar {
+  background-color: #22a354;
+  padding: 1rem;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.navbar ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

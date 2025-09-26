@@ -1,0 +1,19 @@
+// Dans un nouveau fichier `_components.scss`
+
+@import 'variables';
+@import 'mixins';
+
+.card {
+    @include box-style(25px, rgb(207, 0, 0)); // Application du mixin avec des paramètres
+    margin: 1rem 0;
+
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 1em;
+        color: $black;
+    }
+}

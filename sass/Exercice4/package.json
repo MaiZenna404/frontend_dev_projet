@@ -1,0 +1,12 @@
+{
+  "name": "sass-exercise4",
+  "version": "1.0.0",
+  "description": "SASS Exercise 4",
+  "scripts": {
+    "sass": "sass scss/main.scss css/main.css",
+    "sass:watch": "sass --watch scss/main.scss css/main.css"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}
