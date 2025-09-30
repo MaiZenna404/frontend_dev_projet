@@ -1,0 +1,10 @@
+@use '../utils/variables' as *;
+
+.navbar.navbar-expand-lg.bg-dark {
+  background-color: rgb($primary-dark, 0.3);
+  color: $text-light;
+}
+
+.navlink {
+  color: $text-light;
+}

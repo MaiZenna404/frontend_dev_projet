@@ -1,0 +1,80 @@
+@use '../utils/variables' as *;
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("../assets/films/inception.webp") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    transparent 100%
+  );
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin-left: 60px;
+  z-index: 2;
+}
+
+.hero-badge {
+  background: $primary-red;
+  color: white;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  line-height: 1.1;
+  letter-spacing: 4px;
+}
+
+.hero-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.year,
+.duration {
+  color: #bcbcbc;
+  font-family: "NetflixSans", sans-serif;
+  font-weight: 500;
+}
+
+.hero-description {
+  font-family: "NetflixSans", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: normal;
+  margin: 0 0 30px 0;
+  color: #e5e5e5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  max-width: 650px;
+}

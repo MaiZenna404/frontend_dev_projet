@@ -1,0 +1,110 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+
+// 1. Navbar Brand Override - Higher specificity 'to avoid using !important'
+.navbar .navbar-brand {
+  color: $primary-red;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+  
+  &:hover,
+  &:focus {
+    color: $primary-red;
+    text-decoration: none;
+  }
+}
+
+// 2. Button Overrides - Higher specificity
+.btn.btn-outline-success {
+  border-color: $primary-red;
+  color: $primary-red;
+  background-color: transparent;
+  
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $primary-red;
+    border-color: $primary-red;
+    color: white;
+  }
+  
+  &:not(:disabled):not(.disabled):active {
+    background-color: $primary-red;
+    border-color: $primary-red;
+  }
+}
+
+// 3. Navbar Background Override - Higher specificity
+.navbar.bg-dark {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+// 4. Navbar Dark Theme - Higher specificity
+.navbar.navbar-dark {
+  .navbar-nav {
+    .nav-link {
+      color: $text-light;
+      @include netflix-font(400, 0.9rem);
+      padding: 0.5rem 1rem;
+      transition: color 0.3s ease;
+      position: relative;
+      
+      &:hover,
+      &:focus {
+        color: $primary-red;
+      }
+      
+      &.active {
+        color: $primary-red;
+        
+        // Netflix-style active indicator
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 80%;
+          height: 2px;
+          background: $primary-red;
+          border-radius: 1px;
+        }
+      }
+    }
+  }
+}
+
+// 5. Form Control Overrides
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: $text-light;
+  @include netflix-font(400, 0.9rem);
+
+  &::placeholder {
+    color: rgba($text-light, 0.6);
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: $primary-red;
+    box-shadow: 0 0 0 0.2rem rgba($primary-red, 0.25);
+    color: $text-light;
+  }
+}
+
+// 6. Mobile Responsive Overrides
+@include mobile {
+  .navbar {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+
+    &.navbar-dark .navbar-nav .nav-link {
+      font-size: 0.8rem;
+      padding: 0.25rem 0.5rem;
+    }
+  }
+}

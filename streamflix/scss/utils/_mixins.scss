@@ -1,0 +1,96 @@
+
+@use '../utils/variables' as *;
+
+// Flexbox Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Typography Mixins
+@mixin netflix-font($weight: 400, $size: 1rem) {
+  font-family: "NetflixSans", sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+}
+
+@mixin text-shadow($opacity: 0.8) {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, $opacity);
+}
+
+// Button Mixins
+@mixin button-base {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: "NetflixSans", sans-serif;
+}
+
+@mixin hover-transform($scale: 1.05) {
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale($scale);
+  }
+}
+
+// Netflix Red Color
+@mixin netflix-red-color {
+  background: $primary-red;
+}
+
+// Responsive Breakpoints
+@mixin mobile {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+// Mobile Header Mixin (avoids !important)
+@mixin mobile-header {
+  body header,
+  .navbar {
+    width: 100%;
+    padding: 7px 14px;
+    box-sizing: border-box;
+  }
+}
+
+// Mobile Typography Mixin
+@mixin mobile-typography {
+  .navbar-brand,
+  .navbar .logo {
+    font-size: 10px;
+    margin-top: 6px;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    font-size: 8px;
+    padding: 6px 4px;
+  }
+}

@@ -1,0 +1,85 @@
+@use '../utils/variables' as *;
+
+// Google Fonts Import
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+// NetflixSans Font Family - All Weights
+@font-face {
+  font-family: "NetflixSans";
+  src: url("../assets/netflix-sans-font/NetflixSans-Light.woff2") format("woff2"),
+    url("../assets/netflix-sans-font/NetflixSans-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NetflixSans";
+  src: url("../assets/netflix-sans-font/NetflixSans-Regular.woff2") format("woff2"),
+    url("../assets/netflix-sans-font/NetflixSans-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NetflixSans";
+  src: url("../assets/netflix-sans-font/NetflixSans-Medium.woff2") format("woff2"),
+    url("../assets/netflix-sans-font/NetflixSans-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NetflixSans";
+  src: url("../assets/netflix-sans-font/NetflixSans-Bold.woff2") format("woff2"),
+    url("../assets/netflix-sans-font/NetflixSans-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Typography Variables
+$font-primary: 'NetflixSans', 'Helvetica Neue', sans-serif;
+$font-secondary: 'Bebas Neue', sans-serif;
+$font-size-base: 16px;
+$font-size-large: 24px;
+$font-size-small: 14px;
+
+// Base Typography
+body {
+  font-family: $font-secondary, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Section Headings
+section h4 {
+  font-family: $font-primary, sans-serif;
+  font-weight: 500;
+  font-size: 1.75rem;
+  margin: 0 0 2rem 0;
+  color: $text-light;
+  padding-left: 2rem;
+  letter-spacing: 0.5px;
+}
+
+// Section Title Underlines
+.trending-films h4,
+.recommended-films h4,
+.new-releases h4 {
+  position: relative;
+  margin-bottom: 2rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 2rem;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, $primary-red, rgba($primary-red, 0.5));
+    border-radius: 2px;
+  }
+}

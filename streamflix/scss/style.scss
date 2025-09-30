@@ -1,0 +1,21 @@
+// StreamFlix SCSS - Main Entry Point
+
+// Base styles (foundational styles)
+@use "base/reset";
+@use "base/typography";
+
+// Component styles (reusable UI components)
+@use "components/buttons";
+@use "components/cards"; 
+@use "components/navigation";
+
+// Layout styles (page structure)
+@use "layout/header";
+@use "layout/hero";
+@use "layout/footer";
+
+// Page styles (page-specific styles)
+@use "pages/home";
+
+// Vendor overrides (third-party customizations)
+@use "vendors/bootstrap-custom";
